@@ -1,0 +1,36 @@
+{
+  "name": "KaylaWebsite",
+  "version": "1.0.0",
+  "description": "Music Website",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "grunt-cli": "^1.2.0"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "copy-webpack-plugin": "^4.0.0",
+    "css-loader": "^0.25.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-less": "~1.4.0",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "~1.0.0",
+    "jquery-bridget": "^2.0.1",
+    "less": "2.7.1",
+    "less-loader": "2.2.3",
+    "masonry-layout": "^4.1.1",
+    "path": "^0.12.7",
+    "style-loader": "^0.13.1",
+    "uglify-js": "^2.7.4",
+    "webpack": "1.13.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node_modules/.bin/webpack --config webpack.config.js",
+    "uglify": "node_modules/.bin/uglifyjs ./build/assets/js/js.js -c -m -o ./build/assets/js/js.js"
+  },
+  "author": "Gustavo del Pino",
+  "license": "ISC"
+}

@@ -1,0 +1,148 @@
+@import "../css/bootstrap.css";
+@import "../css/magnific-popup.css";
+@import "../css/fonts.css";
+@import "../css/entypo.css";
+@import "../css/flaticon.css";
+
+@import "variables.less";
+@import "font-awesome.less";
+/*------------------------------------------------------------
+
+[Master Stylesheet]
+
+Project:	Gustavo del Pino Personal Website
+Version:	1.0
+
+>>> TABLE OF CONTENTS:
+
+1.0 - General Styles
+2.0 - Navigation
+3.0 - Image Header
+4.0 - jPlayer Home
+5.0 - Discography
+6.0 - Portfolio
+8.0 - Tour Dates
+	8.1 - Single Tour Dates
+9.0 - Our Store
+	9.1 - Store Product
+10.0 - Biography
+11.0 - Contact Form
+12.0 - Footer
+13.0 - Social Media Sidebar
+14.0 - Keyframes Annimation
+15.0 - Import Style Switcher
+--------------------------------------------------------------
+
+/*----- GENERAL ------*/
+@import "general.less";
+
+/*======= Preloader ======*/
+@import "preloader.less";
+
+/*===== Category Title =====*/
+@import "category-title.less";
+
+.skew-pos {
+    padding-top: 250px;
+    padding-bottom: 250px;
+    position: relative;
+    z-index: 1;
+}
+@media screen and (max-width: 767px) {
+    .skew-pos {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+}
+.skew-pos .skew-neg {
+    position: relative;
+    z-index: 5;
+}
+.skew-pos .skew-arrow {
+    display: block;
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    z-index: 2;
+}
+.skew-pos .skew-arrow.left {
+    background: url(../img/elements/arrow-left.png) 0 0 no-repeat;
+    top: 0;
+    left: 0;
+}
+.skew-pos .skew-arrow.right {
+    background: url(../img/elements/arrow-right.png) 0 0 no-repeat;
+    bottom: 0;
+    right: 0;
+}
+@media screen and (min-width: 1920px) {
+    .skew-pos .skew-arrow {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+a {
+    outline: none !important;
+}
+/*--------------------------------------------------------------
+2.0 - Navigation
+--------------------------------------------------------------*/
+@import "navigation.less";
+
+/*--------------------------------------------------------------
+3.0 - Image Header
+--------------------------------------------------------------*/
+@import "image-header.less";
+
+/*--------------------------------------------------------------
+3.0 - Jquery Player
+--------------------------------------------------------------*/
+@import "jplayer.less";
+
+/*--------------------------------------------------------------
+5.0 - Discography
+--------------------------------------------------------------*/
+@import "discography.less";
+
+/*--------------------------------------------------------------
+6.0 - Portfolio
+--------------------------------------------------------------*/
+@import "portfolio.less";
+
+/*--------------------------------------------------------------
+10.0 - Biography
+--------------------------------------------------------------*/
+@import "biography.less";
+
+/*--------------------------------------------------------------
+11.0 - Contact Form
+--------------------------------------------------------------*/
+@import "contact.less";
+
+/*--------------------------------------------------------------
+7.0 - Gallery
+--------------------------------------------------------------*/
+@import "gallery.less";
+
+/*--------------------------------------------------------------
+12.0 - Footer
+--------------------------------------------------------------*/
+@import "footer.less";
+
+/*--------------------------------------------------------------
+13.0 - Social Media Sidebar
+--------------------------------------------------------------*/
+@import "social-sidebar.less";
+
+/*--------------------------------------------------------------
+14.0 - Keyframes Animation
+--------------------------------------------------------------*/
+@import "keyframes-animation.less";
+
+#sc-widget {
+    margin: 40px 0 0 0;
+    border: 2px solid @line_color;
+    border-radius: 6px;
+}
